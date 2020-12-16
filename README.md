@@ -65,7 +65,7 @@ Examples of useful commands.
 
 # Examples:
 
-A small example of Rocket & Diesel usage can be found in `/api_server/src/posts.rs` on [this branch](https://github.com/ghotiphud/rust-web-starter/tree/diesel_blog).
+A small example of Rocket & Diesel usage can be found in `/api_server/src/posts.rs` on [this branch](https://github.com/xydlebug/rust-web-starter/tree/diesel_blog).
 
 Calling the api from React can be seen in `/web/src/App.tsx`
 

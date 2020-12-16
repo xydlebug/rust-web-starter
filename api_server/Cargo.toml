@@ -1,15 +1,15 @@
 [package]
 name = "api_server"
 version = "0.2.0"
-authors = ["Yale Cason <yale.cason@gmail.com>", "Mike Farrell <mrmikefarrell@gmail.com>"]
+authors = ["Yale Cason <yale.cason@gmail.com>", "Mike Farrell <mrmikefarrell@gmail.com>", "Richard Webber <rjwebber72@gmail.com>"]
 
 [dependencies]
-rocket = "0.4"
-diesel = { version = "1.4.1", features = ["postgres"] }
+rocket = "0.4.6"
+diesel = { version = "1.4.1", features = ["mysql"] }
 serde = "1.0"
 serde_derive = "1.0"
 
 [dependencies.rocket_contrib]
 version = "*"
 default-features = false
-features = ["json", "diesel_postgres_pool"]
+features = ["json", "diesel_mysql_pool"]

@@ -13,7 +13,7 @@ mod schema;
 // mod models;
 
 use rocket::request::Request;
-use rocket_contrib::databases::diesel::PgConnection;
+use rocket_contrib::databases::diesel::MysqlConnection;
 
 #[get("/")]
 fn index(_db_conn: RustyDbConn) -> &'static str {
@@ -27,8 +27,8 @@ fn service_not_available(_req: &Request) -> &'static str {
     "Service is not available. (Is the database up?)"
 }
 
-#[database("rustydb")]
-pub struct RustyDbConn(PgConnection);
+#[database("dashboard")]
+pub struct RustyDbConn(MysqlConnection);
 
 fn main() {
     rocket::ignite()

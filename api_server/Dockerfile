@@ -1,6 +1,9 @@
 FROM rustlang/rust:nightly
 
-RUN cargo install diesel_cli --no-default-features --features postgres
+# libmysqlclient needed for diesel_cli
+RUN apt-get install libmariadb-dev-compat libmariadb-dev
+
+RUN cargo install diesel_cli --no-default-features --features mysql
 
 RUN cargo install cargo-watch
 
