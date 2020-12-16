@@ -1,5 +1,5 @@
 # Rust Web Starter
-Pre-configured starter template for web apps using React ([create-react-app w/ Typescript](https://github.com/Microsoft/TypeScript-React-Starter)) on the frontend and Rust ([Rocket](https://rocket.rs), [Diesel](http://diesel.rs), & [PostgreSQL](https://www.postgresql.org/)) on the backend.
+Pre-configured starter template for web apps using React ([create-react-app w/ Typescript](https://github.com/Microsoft/TypeScript-React-Starter)) on the frontend and Rust ([Rocket](https://rocket.rs), [Diesel](http://diesel.rs), & [MySQL](https://dev.mysql.com/downloads/mysql/)) on the backend.
 
 # Quick Start
 
@@ -9,7 +9,7 @@ Then:
 
 ```bash 
 # clone template into new directory
-git clone https://github.com/ghotiphud/rust-web-starter.git my-new-project
+git clone https://github.com/xydlebug/rust-web-starter.git my-new-project
 cd my-new-project
 
 # start it up
